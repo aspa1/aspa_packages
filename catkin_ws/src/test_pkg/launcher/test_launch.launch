@@ -1,0 +1,5 @@
+<launch>
+
+	<node type="sonar1" pkg="test_pkg" name="sonar1" output="screen"/>
+
+</launch>
