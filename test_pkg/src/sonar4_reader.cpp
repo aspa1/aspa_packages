@@ -10,7 +10,7 @@ using namespace std;
 void sonarCallback (sensor_msgs::Range msg)
 {
   //ROS_INFO( msg.data.c_str());
-  ROS_INFO("\tSonar1: Range : %f",msg.range);
+  ROS_INFO("\tSonar4: Range : %f",msg.range);
   //cout << msg;
 }
 
@@ -26,7 +26,7 @@ int main(int argc, char **argv)
    * You must call one of the versions of ros::init() before using any other
    * part of the ROS system.
    */
-  ros::init(argc, argv, "sonar1_reader");
+  ros::init(argc, argv, "sonar4_reader");
 
   /**
    * NodeHandle is the main access point to communications with the ROS system.
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
    * is the number of messages that will be buffered up before beginning to throw
    * away the oldest ones.
    */
-  ros::Subscriber sub = n.subscribe("/robot0/sonar_1", 1000, sonarCallback);
+  ros::Subscriber sub = n.subscribe("/robot0/sonar_4", 1000, sonarCallback);
   
   /**
    * ros::spin() will enter a loop, pumping callbacks.  With this version, all

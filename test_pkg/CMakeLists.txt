@@ -135,6 +135,18 @@ add_executable(sonar1 src/sonar1_reader.cpp)
 target_link_libraries(sonar1 ${catkin_LIBRARIES})
 add_dependencies(sonar1 sensor_msgs_gencpp)
 
+add_executable(sonar2 src/sonar2_reader.cpp)
+target_link_libraries(sonar2 ${catkin_LIBRARIES})
+add_dependencies(sonar2 sensor_msgs_gencpp)
+
+add_executable(sonar3 src/sonar3_reader.cpp)
+target_link_libraries(sonar3 ${catkin_LIBRARIES})
+add_dependencies(sonar3 sensor_msgs_gencpp)
+
+add_executable(sonar4 src/sonar4_reader.cpp)
+target_link_libraries(sonar4 ${catkin_LIBRARIES})
+add_dependencies(sonar4 sensor_msgs_gencpp)
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(test_pkg_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
